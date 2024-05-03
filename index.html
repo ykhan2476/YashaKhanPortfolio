@@ -2,26 +2,6 @@
 <html>
 <head>
     <title>YK Portfolio</title>
-    <script>
-        window.onload = function() {
-  var img1 = document.getElementById('p1');
-  var img2 = document.getElementById('p2');
-
-  function changeImages() {
-    if (window.innerWidth <= 800) {
-      img1.src = 'background/slide2.png';
-      img2.src = 'background/slide4.png';
-    } else {
-      img1.src = 'background/slide1.png';
-      img2.src = 'background/slide3.png';
-    }
-  }
-
-  changeImages(); // Call the function initially
-
-  window.addEventListener('resize', changeImages); // Update on resize
-};
-    </script>
     <style>
         * {
             box-sizing: border-box;
@@ -78,10 +58,6 @@
             text-align: center;
             padding: 1rem 0;
             background-color: #000000;
-        }
-        #p1, #p2{
-       width: 100%;
-        height: auto;
         }
         .yellow-button {
             position: absolute;
@@ -157,13 +133,13 @@
             left:550px;
             
         }
-             #p2 {
+             #p1 {
              width: 100%; 
-                 src="background/slide2.png";/* Display full width for large screens */
+                 src:"background/slide2.png";/* Display full width for large screens */
             }
              #p2{
              width: 100%; 
-                 src="background/slide4.png";/* Display full width for large screens */
+                 src:"background/slide4.png";/* Display full width for large screens */
             }
             .projecticon {
                 height: 100px;
