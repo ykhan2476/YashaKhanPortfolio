@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YK Portfolio</title>
+    <script>
+        window.onload = function() {
+            var img = document.getElementById('p1');
+            var img2 = document.getElementById('p2');
+            // Check the screen width and change the image source accordingly
+            if (window.innerWidth <= 800) {
+                img.src = 'background/slide2.png';
+                img2.src = 'background/slide4.png';
+            } else {
+                img.src = 'background/slide1.png';
+                img2.src = 'background/slide3.png';
+            }
+            
+
+        }
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-image: url("background/bg.jpeg");
+        }
+
+        nav {
+            overflow: hidden;
+            position: fixed;
+            z-index: 3;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            flex-direction: row;
+            justify-content:flex-end;
+            align-items: center;
+            width: 100%;
+           
+        }
+
+        .card {
+            float: left;
+            height: 400px;
+            width: 650px;
+            margin: 40px;
+            border-radius: 20px;
+        }
+
+        .projecticon {
+            height: 150px;
+            width: 200px;
+        }
+
+        .contacticon {
+            height: 40px;
+            width: 40px;
+            margin: 20px;
+        }
+
+        .adjustimage {
+            width: 100%;
+            height: auto;
+        }
+
+        #contact {
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #000000;
+        }
+        #p1, #p2{
+       width: 100%;
+        height: auto;
+        }
+        .yellow-button {
+            position: absolute;
+            left:1200px;
+            top:50px;
+            background-color: transparent;
+            border: 2px solid rgb(255, 200, 0);
+            color: rgb(255, 200, 0);
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 10px;
+            float: right;
+        }
+        .fullyellow-button {
+            position: absolute;
+            left:1080px;
+            top:50px;
+            background-color: rgb(255, 200, 0);
+            border: 2px solid rgb(255, 200, 0);
+            color: black;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 10px;
+            float: right;
+            color:black;
+        }
+        .yellow-button:hover {
+            background-color:rgb(255, 200, 0);
+            color: black;
+        }
+        .fullyellow-button:hover {
+            border: 2px solid rgb(255, 200, 0);
+            background-color: transparent;
+            color: rgba(255, 217, 0, 0.993); ;
+        }
+        p, h2, h3, h4, a:any-link, h1 {
+            color: #fff;
+            text-align: center;
+        }
+
+       
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: darkslategray;
+        }
+
+        @media screen and (max-width: 768px) {
+            .yellow-button {
+            position: absolute;
+            left:600px;
+            
+        }
+        .fullyellow-button {
+            position: absolute;
+            left:550px;
+            
+        }
+            .projecticon {
+                height: 100px;
+                width: 100px;
+            }
+         
+            .adjustimage {
+                height: auto;
+                max-width: 100%;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .projecticon{
+                height: 200px;
+                width: 100px;
+            }
+            .contacticon {
+                height: 20px;
+                width: 20px;
+                margin: 10px;
+            }
+
+            body {
+                font-size: 1.2em;
+            }
+            #heading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        order: -1;
+    }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#heading">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+<div>
+<a href="https://firebasestorage.googleapis.com/v0/b/hello-130a1.appspot.com/o/YKhanResume%20_JIET_CS_21.pdf?alt=media&token=1c6fbb86-8fbc-4599-8458-a639e4e76b56"
+   download="YashaKhanProjects.pdf"> 
+   <button class="fullyellow-button" style="margin-right: 60px; margin-top: 60px;">Resume
+ </button></a>
+ <a href="https://firebasestorage.googleapis.com/v0/b/hello-130a1.appspot.com/o/YashaKhancertificates.pdf?alt=media&token=13572389-7b70-4efc-9328-fe27847e7468"
+   download="YashaKhanProjects.pdf"> 
+   <button class="yellow-button" style="margin-right: 60px; margin-top: 60px;">Certifications
+ </button></a>
+</div>
+<div id="home">
+    <img src=""  id="p1" >
+</div>
+<a href="https://firebasestorage.googleapis.com/v0/b/hello-130a1.appspot.com/o/portfolioProjects.pdf?alt=media&token=c2d91158-33b0-409a-b1db-9bb8d3a1289c"
+   download="YashaKhanProjects.pdf"> 
+   <button class="yellow-button" style="margin-right: 60px; margin-top: 60px;top:900px">See All  Projects
+ </button>
+</a>
+<div id="heading">
+    <img src=""  id="p2" >
+</div>
+ 
+
+
+<img src="background/services.png" alt="Services Image 1" class="adjustimage" id="services">
+<center id="contact">
+    <h2>Contact</h2>
+    <div style="height: 100px;"></div>
+    <h4 style="display:inline-flex;"><img src="background/phone-call.png" alt="phone no." class="contacticon">8209845814</h4>
+    <h4 style="display:inline-flex;"><img src="background/gmail.png" alt="gmail" class="contacticon">yashakhan4761@gmail.com</h4>
+    <h4 style="display:inline-flex;"><img src="background/linkedin.png" alt="linkedin" class="contacticon">
+        <a href="https://www.linkedin.com/in/yasha-khan-1823ba244">linkedin.com/in/yasha-khan</a></h4>
+</center>
+<footer>
+    <p>&copy; 2024 Yasha Khan Portfolio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
